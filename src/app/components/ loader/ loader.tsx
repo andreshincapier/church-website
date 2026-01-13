@@ -3,7 +3,6 @@ import { CircularProgress, CircularProgressProps, LinearProgress } from '@mui/ma
 import styles from './loader.module.scss'
 import clsx from 'clsx'
 
-/* eslint-disable-next-line */
 export interface LoaderProps {
   children?: ReactNode
   direction?: 'column' | 'row'
@@ -30,7 +29,7 @@ export const Loader = (props: LoaderProps & CircularProgressProps) => {
     if (ref.current) {
       ref.current.style.setProperty('--root_q884nrA-posintion', direction)
     }
-  }, [])
+  }, [direction])
 
   return (
     <div
