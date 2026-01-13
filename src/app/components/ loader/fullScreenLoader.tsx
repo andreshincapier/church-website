@@ -1,3 +1,4 @@
+import React, { ReactNode } from 'react'
 import Loader from './ loader'
 import styles from './fullScreenLoader.module.scss'
 import clsx from 'clsx'
@@ -5,6 +6,7 @@ import clsx from 'clsx'
 interface Props {
   className?: string
   linear?: boolean
+  children?: ReactNode
 }
 export const FullScreenLoader: React.FC<Props> = ({ className, children, linear }) => {
   return (
