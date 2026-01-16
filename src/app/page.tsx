@@ -1,4 +1,8 @@
+'use client';
+
 import Navigation from './components/Navigation';
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 function Home() {
   return (
@@ -16,15 +20,36 @@ function Home() {
       >
         {/* Overlay for better text readability */}
         <div className="absolute inset-0 bg-black/40 -z-10"></div>
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-center relative z-10">
-        <h1 className="text-white text-3xl sm:text-4xl font-bold uppercase text-center">
-          JUAN 4:14
-        </h1>
-        <p className="text-white text-lg sm:text-xl text-center font-[family-name:var(--font-geist-mono)] max-w-4xl uppercase leading-relaxed">
-          14 MAS EL QUE BEBIERE DEL AGUA QUE YO LE DARÉ, NO TENDRÁ SED JAMÁS; SINO QUE EL AGUA QUE YO LE DARÉ SERÁ EN ÉL UNA FUENTE DE AGUA QUE SALTE PARA VIDA ETERNA.
-        </p>
+      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-center relative z-10 w-full max-w-4xl">
+        <Carousel
+          autoPlay
+          infiniteLoop
+          interval={5000}
+          showThumbs={false}
+          showStatus={false}
+          className="w-full max-w-4xl"
+        >
+          <div className="flex flex-col items-center py-12 px-4">
+            <img src="/slides/sunday.jpeg" alt="Sunday Service" className="max-h-[600px] w-auto object-contain" />
+          </div>
+          <div className="flex flex-col items-center py-12 px-4">
+            <img src="/slides/bible_study.jpeg" alt="Bible Study" className="max-h-[600px] w-auto object-contain" />
+          </div>
+          <div className="flex flex-col items-center py-12 px-4">
+            <img src="/slides/tusday.jpeg" alt="Tuesday Intercession" className="max-h-[600px] w-auto object-contain" />
+          </div>
+          <div className="flex flex-col items-center py-12 px-4">
+            <img src="/slides/wenesday.jpeg" alt="Wednesday Intercession" className="max-h-[600px] w-auto object-contain" />
+          </div>
+        </Carousel>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center relative z-10">
+      <footer className="row-start-3 flex flex-col gap-2 items-center justify-center relative z-10">
+        <p className="text-white text-lg sm:text-lg text-center italic">
+          "Mas el que bebiere del agua que yo le daré, no tendrá sed jamás; sino que el agua que yo le daré será en él una fuente de agua que salte para vida eterna."
+        </p>
+        <p className="text-white text-base sm:text-xs text-center">
+          Juan 4:14 - Reina-Valera 1960
+        </p>
       </footer>
       </div>
     </>
