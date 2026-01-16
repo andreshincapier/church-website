@@ -45,7 +45,7 @@ function Home() {
       </main>
       <footer className="row-start-3 flex flex-col gap-2 items-center justify-center relative z-10">
         <p className="text-white text-lg sm:text-lg text-center italic">
-          "Mas el que bebiere del agua que yo le daré, no tendrá sed jamás; sino que el agua que yo le daré será en él una fuente de agua que salte para vida eterna."
+          &ldquo;Mas el que bebiere del agua que yo le daré, no tendrá sed jamás; sino que el agua que yo le daré será en él una fuente de agua que salte para vida eterna.&rdquo;
         </p>
         <p className="text-white text-base sm:text-xs text-center">
           Juan 4:14 - Reina-Valera 1960

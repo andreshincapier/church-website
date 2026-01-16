@@ -107,7 +107,7 @@ function Contacto() {
             {/* Additional message */}
             <div className="mt-8 text-center p-6 border-t-2 border-[#E8DCC4]">
               <p className="text-lg text-gray-700 italic">
-                "Mas el que bebiere del agua que yo le daré, no tendrá sed jamás; sino que el agua que yo le daré será en él una fuente de agua que salte para vida eterna."
+                &ldquo;Mas el que bebiere del agua que yo le daré, no tendrá sed jamás; sino que el agua que yo le daré será en él una fuente de agua que salte para vida eterna.&rdquo;
               </p>
               <p className="text-base text-gray-600 mt-2">
                 Juan 4:14
