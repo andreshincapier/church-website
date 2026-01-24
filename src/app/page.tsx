@@ -59,7 +59,7 @@ function Home() {
             </div>
             <div className="flex flex-col items-center py-12 px-4">
               <img
-                src="/slides/youth.jpeg"
+                src="/slides/youths.jpeg"
                 alt="Youth Group"
                 className="max-h-[600px] w-auto object-contain"
               />
